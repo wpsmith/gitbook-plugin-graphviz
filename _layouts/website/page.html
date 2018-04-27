@@ -1,0 +1,6 @@
+{% extends template.self %}
+
+{% block javascript %}
+    {{ super() }}
+    <script src="{{ "gitbook-plugin-vis/vis/vis.min.js"|resolveAsset }}"></script>
+{% endblock %}

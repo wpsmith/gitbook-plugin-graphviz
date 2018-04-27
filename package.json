@@ -1,0 +1,37 @@
+{
+    "name": "gitbook-plugin-vis",
+    "version": "0.0.1",
+    "description": "vis.js for Gitbook",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wpsmithtwc/gitbook-plugin-vis.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://github.com/wpsmithtwc/gitbook-plugin-vis#readme",
+    "engines": {
+        "gitbook": "*"
+    },
+    "gitbook": {
+        "properties": {
+            "myConfigKey": {
+                "type": "string",
+                "default": "it's the default value",
+                "description": "It defines my awesome config!"
+            }
+        }
+    },
+    "main": "index.js",
+    "scripts": {
+        "clean": "rimraf dist",
+        "build": "npm run clean && npm run copy:assets && npm run copy:book",
+        "copy:assets": "mkdir -p dist/vis && cp ./node_modules/vis/dist/{vis*.js,vis*.css} dist/vis",
+        "copy:book": "mkdir -p dist/book && cp -R book/ dist/book"
+    },
+    "dependencies": {
+        "vis": "^4.21.0"
+    },
+    "devDependencies": {
+        "rimraf": "^2.6.2"
+    }
+}
