@@ -25,11 +25,12 @@
     "scripts": {
         "clean": "rimraf dist",
         "build": "npm run clean && npm run copy:assets && npm run copy:book",
-        "copy:assets": "mkdir -p dist/vis && cp ./node_modules/vis/dist/{vis*.js,vis*.css} dist/vis",
+        "copy:assets": "mkdir -p dist/vis && cp ./node_modules/vis/dist/{vis*.js,vis*.css} dist/vis && cp ./node_modules/viz.js/{viz.js,viz-lite.js} dist/vis",
         "copy:book": "mkdir -p dist/book && cp -R book/ dist/book"
     },
     "dependencies": {
-        "vis": "^4.21.0"
+        "vis": "^4.21.0",
+        "viz.js": "^1.8.1"
     },
     "devDependencies": {
         "rimraf": "^2.6.2"
