@@ -1,4 +1,4 @@
-var visRx = /^```vis((.*[\r\n]+)+?)?```$/im;
+var visRx = /^```vis|viz|graphviz((.*[\r\n]+)+?)?```$/im;
 
 function processVis(page) {
 
