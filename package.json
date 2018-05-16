@@ -1,6 +1,6 @@
 {
     "name": "gitbook-plugin-graphviz",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "vis.js for Gitbook",
     "repository": {
         "type": "git",
