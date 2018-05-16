@@ -1,25 +1,20 @@
 {
-    "name": "gitbook-plugin-vis",
+    "name": "gitbook-plugin-graphviz",
     "version": "0.0.1",
     "description": "vis.js for Gitbook",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/wpsmithtwc/gitbook-plugin-vis.git"
+        "url": "git+https://github.com/wpsmithtwc/gitbook-plugin-graphviz.git"
     },
     "author": "",
     "license": "ISC",
-    "homepage": "https://github.com/wpsmithtwc/gitbook-plugin-vis#readme",
+    "homepage": "https://github.com/wpsmithtwc/gitbook-plugin-graphviz#readme",
     "engines": {
         "gitbook": "*"
     },
-    "gitbook": {
-        "properties": {
-            "myConfigKey": {
-                "type": "string",
-                "default": "it's the default value",
-                "description": "It defines my awesome config!"
-            }
-        }
+    "gitbook": {},
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
     },
     "main": "index.js",
     "scripts": {
@@ -35,4 +30,5 @@
     "devDependencies": {
         "rimraf": "^2.6.2"
     }
+    
 }
